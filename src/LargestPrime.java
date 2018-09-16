@@ -7,7 +7,7 @@ public class LargestPrime {
 		long stop = init/7; // first number that divides evenly
 		ArrayList<Long> factors = new ArrayList<Long>(); // list of factors
 		for(long x = stop ; x >1; x-- ) {
-			System.out.println("first loop");
+			System.out.println("first loop" + " " + x);
 			if(init % x == 0) { // first number mod x should be zero if factor
 				if(isPrime(x)) { //checks if the number is a prime
 					factors.add(x); //if the number is a prime factor, add it to the factor arraylist
